@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+            integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+            crossorigin="anonymous"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-database.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+    <script src="fireBase.js"></script>
+    <style type="text/css">
+        h1 {color: #0e59a5;text-align: center;}
+        label {color: #0e59a5;}
+    </style>
+</head>
+<body>
+     <nav class="navbar navbar-expand-md bg-light navbar-light fixed-top customNav">
+            <a href="#" class="navbar-brand"><b>WhatsAPP Clone</b></a>
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navcollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            <div class="collapse navbar-collapse" id="navcollapse">
+                <ul class="navbar-nav ml-auto nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle fa fa-user" data-toggle="dropdown">&nbsp&nbsp<b id="currentNameB"></b></a>
+                    <div class="dropdown-menu dropdown-menu-right shadow-lg bg-white rounded">
+                        <div class="card" style="width: 300px;">
+                            <div class="card-body" style="display: flex; justify-content: center; align-items:center; flex-direction: column;">
+                                <img src="Images/user.jpg" id="userPhoto" alt="User Photo" class="card-img-top">
+                                <h3 class="card-title" id="currentName">username</h3>
+                                <p class="card-text" id="currentEmail">email</p>
+                            </div>
+                            <a href="#" onclick="logout()" style="display: flex; justify-content: center;" class="card-link btn btn-primary ml-2 mr-2">Logout</a>
+                        </div>
+                    </div>
+                    <li class="nav-item">
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <section id="section">
+            <div class="loader">
+                <span style="--i:1;"></span>
+                <span style="--i:2;"></span>
+                <span style="--i:3;"></span>
+                <span style="--i:4;"></span>
+                <span style="--i:5;"></span>
+                <span style="--i:6;"></span>
+                <span style="--i:7;"></span>
+                <span style="--i:8;"></span>
+                <span style="--i:9;"></span>
+                <span style="--i:10;"></span>
+                <span style="--i:11;"></span>
+                <span style="--i:12;"></span>
+                <span style="--i:13;"></span>
+                <span style="--i:14;"></span>
+                <span style="--i:15;"></span>
+                <span style="--i:16;"></span>
+                <span style="--i:17;"></span>
+                <span style="--i:18;"></span>
+                <span style="--i:19;"></span>
+                <span style="--i:20;"></span>
+            </div>
+        </section>    
+        <h3 class='alert alert-danger' id="result"></h3>
+        <div class="Dashboard">
+            <div id="usersDiv"><ul id="usersUl"></ul></div>
+            <div id="messagesDiv">
+                <div style="background-color: #f8f9fa; display: flex; width: 70vw; height: 100vh;justify-content: center; align-items: center;" id="welcomeDiv">
+                  <p><h1 style="color: rgb(83, 81, 81); margin-left:5%;"><img src="Images/wap.png" alt="" width="250" height="250"><br>WhatsAPP<br><br><p>Connect your phone to Wi-Fi to sync WhatsAPP messages</p><small><a href="http://www.cartapp.phpnet.us/example1/kurucu/index.html" target="_blank">Oğuzhan ÇART</a></small></h1>
+                </div>
+            </div>
+        </div>
+    
+    <script>ifLoggedIn()</script>
+</body>
+</html>

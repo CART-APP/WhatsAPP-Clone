@@ -1,0 +1,200 @@
+#result
+{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    margin: 10vh 10vw 1px 10vw;
+    transition: 500ms;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+}
+.Dashboard{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+}
+#usersDiv{
+    width: 30vw;
+    height: 100vh;
+    border-right: 1px solid rgba(83, 82, 82, 0.2);
+    overflow: auto;
+}
+#messagesDiv{
+    width: 70vw;
+    height: 100vh;
+}
+#messagesContainer{
+    width: 70vw;
+    height: 80vh;
+    margin-top: 10vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    background-image: url(Images/background.jpg);
+}
+#messagesPanel{
+    padding: 10px 30px;
+}
+#writeMessagePanel{
+    display: flex;
+    padding: 0 5px;
+    justify-content: space-between;
+    align-items: center;
+    width: 70vw;
+    height: 10vh;
+    background-color: #ededed;
+}
+.sendBtn:focus{
+  outline: none !important;
+  box-shadow: none !important;
+}
+#newMessage
+{
+    margin: 0 5px !important;
+    border-radius: 50px !important;
+}
+.customNav
+{
+    background-color: #ededed !important;
+    border-bottom: 1px solid rgba(83, 82, 82, 0.2) !important;
+    min-height: 10vh !important;
+}
+#usersUl
+{
+    padding-left: 0;
+    margin-top: 10vh;
+}
+.usersLi:hover
+{
+    cursor: pointer;
+    background-color: #ededed;
+}
+.active
+{
+    background-color: #ebebeb;
+}
+.status-circle {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: grey;
+  border: 2px solid white;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+}
+.sentMessage, .receivedMessage
+{
+  font-size: 100%;
+  padding: 5px 10px;
+  border-radius: 10px;
+  max-width: 25vw;
+  word-wrap: break-word;
+  border-bottom: 1px solid rgba(83, 82, 82, 0.5);
+}
+.sentMessage
+{
+  background-color: #dcf8c6;
+  border-top-right-radius: 0;
+}
+.receivedMessage
+{
+  background-color: #ffffff;
+  border-top-left-radius: 0;
+}
+.receivedTail, .sentTail{
+  width: 0;
+  height: 0;
+  border-bottom: 13px solid transparent;
+}
+.receivedTail {
+  width: 12px;
+  height: 16px;
+  position: relative;
+  overflow: hidden;
+  left: 4px;
+  top: -8px;
+  transform: rotate(35deg);
+  border-bottom: 1px solid rgba(83, 82, 82, 0.5);
+}
+.receivedTail:after {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 13px;
+  background: #fff;
+  transform: rotate(55deg);
+  top: 7px;
+  left: 2px;
+}
+.sentTail {
+  width: 12px;
+  height: 16px;
+  position: relative;
+  overflow: hidden;
+  right: 4px;
+  top: -8px;
+  transform: rotate(-35deg);
+  border-bottom: 1px solid rgba(83, 82, 82, 0.5);
+}
+.sentTail:after {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 13px;
+  background: #dcf8c6;
+  transform: rotate(-55deg);
+  top: 7px;
+  left: 2px;
+}
+.loginBtn, .loginFbBtn, .loginGoBtn, .signUpBtn{
+  width: inherit;
+}
+.loginFbBtn, .loginGoBtn{
+  margin: 5px 0;
+}
+.loginFbBtn{
+  background-color: #3b5998;
+}
+.loginGoBtn{
+  background-color: #d34836;
+}
+.loginFbBtn:hover{
+  background-color: #354e85;
+}
+.loginGoBtn:hover{
+  background-color: #b83f2f;
+}
+.loginFbBtn:focus, .loginFbBtn:active{
+  background-color: #2c4270 !important;
+}
+.loginGoBtn:focus, .loginGoBtn:active{
+  background-color: #9e3426 !important;
+}
+.separator-text{
+  color: rgb(149, 147, 147);
+  font-weight: 600;
+  margin: 0;
+}
+.separator {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.separator::before, .separator::after {
+  content: '';
+  flex: 1;
+  border-bottom: 1px solid #bbb;
+}
+.separator::before {
+  margin-right: .25em;
+}
+.separator::after {
+  margin-left: .25em;
+}
