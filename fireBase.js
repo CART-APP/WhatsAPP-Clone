@@ -18,14 +18,14 @@ var photoURL = defaultPhotoURL
 var action_login = false;
 $( document ).ready(function() {window.addEventListener('offline', () => location.href = "noInternet.html");});
 var firebaseConfig = {
-  apiKey: "AIzaSyA0yUnb389raFPaWymxQAkoKxKI53EiNIk",
-  authDomain: "whatsappclone-1c610.firebaseapp.com",
-  databaseURL: "https://whatsappclone-1c610-default-rtdb.europe-west1.firebasedatabase.app",
-  projectId: "whatsappclone-1c610",
-  storageBucket: "whatsappclone-1c610.appspot.com",
-  messagingSenderId: "970859617582",
-  appId: "1:970859617582:web:0b1b2c62e2a8ad6ec16ebf",
-  measurementId: "G-NN5963Z1V6"
+ apiKey: "AIzaSyCLRGkoru_316WBf8xOAuLGjbo6omU9opk",
+  authDomain: "chatapp-97c46.firebaseapp.com",
+  databaseURL: "https://chatapp-97c46.firebaseio.com",
+  projectId: "chatapp-97c46",
+  storageBucket: "chatapp-97c46.appspot.com",
+  messagingSenderId: "292347888679",
+  appId: "1:292347888679:web:9796088fb5e9d16c7f7a02",
+  measurementId: "G-CF0P35403J"
 };
 firebase.initializeApp(firebaseConfig);
 function ifLoggedIn(){
